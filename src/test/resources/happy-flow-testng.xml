@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Happy Flow Test Suite" verbose="1">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    
+    <test name="Happy Flow Test" preserve-order="true">
+        <classes>
+            <class name="test.java.HappyFlowTestNGTest">
+                <methods>
+                    <include name="testHappyFlow"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite> 
